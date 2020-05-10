@@ -1,0 +1,25 @@
+{
+  "name": "iiitm_student_tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "browserify app.js -o bundle.js"
+  },
+  "keywords": [],
+  "author": "Gaurav Kumar Raghav",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "browserify-fs": "^1.0.0",
+    "chart.js": "^2.9.3",
+    "jquery": "^3.5.1",
+    "leaflet": "^1.6.0"
+  },
+  "devDependencies": {
+    "beefy": "^2.1.8",
+    "browserify": "^16.5.1",
+    "leaflet": "^1.6.0"
+  }
+}
