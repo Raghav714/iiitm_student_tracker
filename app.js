@@ -5,13 +5,6 @@ const pin_url = "./data/pinlatlon.json";
 var covidDisData = {};
 
 const fs = require('browserify-fs');
-var locations = [
-  ["16010115","203131", 28.4070, 77.8498],
-  ["16010112","530068", 12.9716, 77.5946],
-  ["16010111","795002", 24.8170, 93.9368],
-  ["16010113","781001", 26.1445, 91.7362],
-  ["16010125","403801", 15.2993, 74.1240]
-];
 var stuData = [];
 
 async function getCases() {
@@ -131,8 +124,7 @@ var stateJson = {
 };
 getCases().then((response) => {
 	var L = require("leaflet");
-	var Chart = require("chart.js");
-
+	
 	var map = L.map("map", {
 		scrollWheelZoom: true,
 	});
