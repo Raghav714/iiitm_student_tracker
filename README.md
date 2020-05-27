@@ -1,1 +1,1 @@
-System for Student tracking
+System developed for tracking Student of IIITM.
